@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: lightblue;
+}
+
+.wrapper {
+    background: #fff;
+    width: 480px;
+    padding: 28px;
+    border-radius: 8px;
+
+    >.pass-field {
+        height: 54px;
+        width: 100%;
+        position: relative;
+
+        >input {
+            width: 100%;
+            height: 100%;
+            padding: 0px 12px;
+            outline: none;
+            border: 1px solid #a7a7a7;
+            border-radius: 4px;
+            font-size: 20px;
+        }
+
+        >i {
+            right: 18px;
+            top: 50%;
+            color: #9a9a9a;
+            font-size: 20px;
+            position: absolute;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+    }
+
+    >.content {
+        margin: 20px 0px 10px;
+
+        >p {
+            font-size: 20px;
+        }
+
+        >.requirement-list {
+            margin-top: 12px;
+
+            >li {
+                list-style-type: none;
+                font-size: 16px;
+                display: flex;
+                align-items: center;
+                margin-bottom: 8px;
+
+                >i {
+                    font-size: 8px;
+                    color: #a7a7a7;
+                    width: 20px;
+                }
+
+                >span {
+                    margin-left: 12px;
+                }
+            }
+
+            >.valid {
+
+                >i {
+                    color: green;
+                    font-size: 14px;
+                }
+
+                >span {
+                    color: #6b6b6b;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:500px) {
+    body {
+        padding: 15px;
+
+        >.wrapper {
+            padding: 15px;
+
+            >.pass-field {
+                height: 55px;
+
+                >input {
+                    font-size: 18px;
+                }
+
+                >i {
+                    font-size: 16px;
+                }
+            }
+
+            >.content {
+                font-size: 18px;
+
+                >.requirement-list li {
+                    font-size: 16px;
+
+                    >span {
+                        margin-left: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
